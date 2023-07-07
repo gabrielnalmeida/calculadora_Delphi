@@ -1,0 +1,382 @@
+object Form1: TForm1
+  Left = 1532
+  Top = 124
+  Width = 346
+  Height = 442
+  Caption = 'Calculadora'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object btn_backspace: TSpeedButton
+    Left = 168
+    Top = 96
+    Width = 73
+    Height = 49
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    Glyph.Data = {
+      F6060000424DF606000000000000360000002800000018000000180000000100
+      180000000000C006000000000000000000000000000000000000FFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFBFCFCEBEEEDFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2B7C362F803BFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF27793258BA842F803B
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF24762D58
+      BF897AD7AD2F803BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FF21732958C38E73D5A97AD7AD2F803BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFF1E712657C6906DD4A673D5A97AD7AD2F803B3383403687453B8A
+      4B3E8E5042915546955A4A985E4D9B63509E6753A06A56A26E58A471FFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFF1B6F2258C99367D2A26DD4A673D5A97AD7AD68CD9D
+      6FCFA175D0A37AD0A680D1A987D1AC8CD2AE91D3B196D3B29BD4B59ED5B785BD
+      9D58A471FFFFFFFFFFFFFFFFFFFFFFFF196D1F59CC9763D19F67D2A26DD4A673
+      D5A97AD7AD80D9B188DBB68FDDBA96DEBE9DE0C2A5E2C7ABE4CBB2E6CFB8E7D2
+      BEE9D6C2EAD985BD9D58A471FFFFFFFFFFFFFFFFFF176B1D5ACD995ED09D63D1
+      9F67D2A26DD4A673D5A97AD7AD80D9B188DBB68FDDBA96DEBE9DE0C2A5E2C7AB
+      E4CBB2E6CFB8E7D2BEE9D6C2EAD985BD9D58A471FFFFFFFFFFFFFFFFFF176B1D
+      BEF1D95ED09D63D19F67D2A26DD4A673D5A97AD7AD80D9B188DBB68FDDBA96DE
+      BE9DE0C2A5E2C7ABE4CBB2E6CFB8E7D2BEE9D6C2EAD985BD9D58A471FFFFFFFF
+      FFFFFFFFFFFFFFFF196D1FB8EFD563D19F67D2A26DD4A673D5A97AD7AD80D9B1
+      88DBB68FDDBA96DEBE9DE0C2A5E2C7ABE4CBB2E6CFB8E7D2BEE9D6C2EAD985BD
+      9D58A471FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1B6F22AFECD067D2A26DD4A673
+      D5A97AD7AD80D9B188DBB68FDDBA94DDBD98DEBF9ADFC099DEC097DDBE92DBBA
+      8CD8B684D5B185BD9D58A471FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF1E71
+      26A4E9C96DD4A673D5A97AD7AD2F803B3685433989483E8C4E41905345935749
+      975C4D9A60509D6553A06956A26C58A37058A471FFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFF21732998E6C273D5A97AD7AD2F803BFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF24762D8DE3BB7AD7AD2F803B
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF27
+      793284E0B62F803BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF2B7C362F803BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+    ParentFont = False
+  end
+  object txt_DISPLAY: TEdit
+    Left = 8
+    Top = 32
+    Width = 321
+    Height = 45
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -32
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+    Text = '0'
+  end
+  object btn_clearNum: TButton
+    Left = 8
+    Top = 96
+    Width = 75
+    Height = 50
+    Caption = 'CE'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+    OnClick = btn_clearNumClick
+  end
+  object btn_clearCalc: TButton
+    Left = 88
+    Top = 96
+    Width = 75
+    Height = 50
+    Caption = 'C'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 2
+  end
+  object btn_equal: TButton
+    Left = 256
+    Top = 352
+    Width = 75
+    Height = 50
+    Caption = '='
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 3
+    OnClick = btn_equalClick
+  end
+  object btn_num7: TButton
+    Left = 8
+    Top = 160
+    Width = 75
+    Height = 50
+    Caption = '7'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 4
+    OnClick = btn_numClick
+  end
+  object btn_num8: TButton
+    Left = 88
+    Top = 160
+    Width = 75
+    Height = 50
+    Caption = '8'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 5
+    OnClick = btn_numClick
+  end
+  object btn_num9: TButton
+    Left = 168
+    Top = 160
+    Width = 75
+    Height = 50
+    Caption = '9'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 6
+    OnClick = btn_numClick
+  end
+  object btn_multiply: TButton
+    Left = 256
+    Top = 160
+    Width = 75
+    Height = 50
+    Caption = 'X'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 7
+    OnClick = btn_multiplyClick
+  end
+  object btn_num4: TButton
+    Left = 8
+    Top = 224
+    Width = 75
+    Height = 50
+    Caption = '4'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 8
+    OnClick = btn_numClick
+  end
+  object btn_num5: TButton
+    Left = 88
+    Top = 224
+    Width = 75
+    Height = 50
+    Caption = '5'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 9
+    OnClick = btn_numClick
+  end
+  object btn_num6: TButton
+    Left = 168
+    Top = 224
+    Width = 75
+    Height = 50
+    Caption = '6'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 10
+    OnClick = btn_numClick
+  end
+  object btn_minus: TButton
+    Left = 256
+    Top = 224
+    Width = 75
+    Height = 50
+    Caption = '-'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 11
+    OnClick = btn_minusClick
+  end
+  object btn_num1: TButton
+    Left = 8
+    Top = 288
+    Width = 75
+    Height = 50
+    Caption = '1'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 12
+    OnClick = btn_numClick
+  end
+  object btn_num2: TButton
+    Left = 88
+    Top = 288
+    Width = 75
+    Height = 50
+    Caption = '2'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 13
+    OnClick = btn_numClick
+  end
+  object btn_num3: TButton
+    Left = 168
+    Top = 288
+    Width = 75
+    Height = 50
+    Caption = '3'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 14
+    OnClick = btn_numClick
+  end
+  object btn_plus: TButton
+    Left = 256
+    Top = 288
+    Width = 75
+    Height = 50
+    Caption = '+'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 15
+    OnClick = btn_plusClick
+  end
+  object btn_fraction: TButton
+    Left = 256
+    Top = 96
+    Width = 75
+    Height = 49
+    Caption = '/'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 16
+    OnClick = btn_fractionClick
+  end
+  object btn_signal: TButton
+    Left = 8
+    Top = 352
+    Width = 75
+    Height = 49
+    Caption = '+/-'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 17
+  end
+  object btn_num0: TButton
+    Left = 88
+    Top = 352
+    Width = 75
+    Height = 49
+    Caption = '0'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 18
+    OnClick = btn_numClick
+  end
+  object btn_float: TButton
+    Left = 168
+    Top = 352
+    Width = 75
+    Height = 49
+    Caption = ','
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 19
+  end
+end
